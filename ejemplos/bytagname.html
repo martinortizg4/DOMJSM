@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercero</title>
+</head>
+<body>
+    <h1 id= 'titulo1'> Ejemplo 2 con DOM </h1>
+
+    <p> saludos</p> 
+    <p>Vuelbo y los saludo</p>
+    <p>Otros dos parrafos</p>
+    <p>Otros dos parrafos</p>
+    
+    <script>
+        let parrafos = document.getElementsByTagName('p');
+        console.log( `no, parrados: ${parrafos.length}`);
+
+        for(let i=0 ; i< parrafos.length ; i++)
+        {
+            console.log(`${i+1}- ${parrafos[i].innerHTML}`)
+        }
+    </script>
+</body>
+</html>
